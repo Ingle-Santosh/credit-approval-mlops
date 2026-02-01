@@ -1,1 +1,5 @@
 dvc
+openpyxl
+scikit-learn
+mlflow
+pytest

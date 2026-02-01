@@ -4,8 +4,26 @@ __pycache__/
 logs/
 artifacts/
 mlruns/
-data/raw/
-data/interim/
-data/processed/
 models/
 venv/
+
+# Ignore all data files (recursively)
+data/raw/**/*
+data/interim/**/*
+data/processed/**/*
+
+# Re-include directories so Git can traverse them
+!data/raw/
+!data/raw/**/
+!data/interim/
+!data/interim/**/
+!data/processed/
+!data/processed/**/
+
+# Allow DVC metadata files
+!data/**/*.dvc
+!data/**/.gitignore
+
+my_study.txt
+
+*.egg-info/

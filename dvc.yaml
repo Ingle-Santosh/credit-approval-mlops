@@ -1,0 +1,9 @@
+stages:
+  data_ingestion:
+    cmd: python src/components/data_ingestion.py
+    deps:
+      - data/raw/internal/internal_bank_data.xlsx
+      - data/raw/external/external_cibil_data.xlsx
+      - src/components/data_ingestion.py
+    outs:
+      - data/interim/merged_credit_data.csv
