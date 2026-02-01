@@ -1,0 +1,5 @@
+outs:
+- md5: 0826d1bf9d2604ec81984d79828caed6
+  size: 5382959
+  hash: md5
+  path: internal_bank_data.xlsx
